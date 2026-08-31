@@ -21,7 +21,7 @@ Business Intelligence and Data Analytics focuses on extracting actionable insigh
 ## Repository Structure
 
 ```text
-Business-Intelligence-and-Data-Analytics-BIDA/
+BIDA/
 │
 ├── .venv/                         # Python virtual environment (ignored)
 ├── Datasets/                      # Input datasets
@@ -111,8 +111,8 @@ Business-Intelligence-and-Data-Analytics-BIDA/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/toxicbishop/Business-Intelligence-and-Data-Analytics-BIDA.git
-cd Business-Intelligence-and-Data-Analytics-BIDA
+git clone https://github.com/toxicbishop/BIDA.git
+cd BIDA
 ```
 
 ### 2. Set Up Virtual Environment
