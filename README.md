@@ -15,6 +15,7 @@ Business Intelligence and Data Analytics focuses on extracting actionable insigh
 - Text Mining, Natural Language Processing, and Sentiment Analysis
 - Topic Modeling and Web Analytics
 - Social Network Graph Analytics
+- Web Hyperlink Structure & PageRank Algorithm
 
 ---
 
@@ -35,7 +36,8 @@ BIDA/
 │   ├── program-10-image-1.png
 │   ├── program-10-image-2.png
 │   ├── program-11-image-1.png
-│   └── program-11-image-2.png
+│   ├── program-11-image-2.png
+│   └── program-12.png
 ├── output/                        # Generated output data files
 │   └── customer_reviews.xlsx      # Generated dataset for sentiment analysis
 ├── 05.ipynb                       # Exp 05: K-Means Customer Segmentation
@@ -45,6 +47,7 @@ BIDA/
 ├── 09.ipynb                       # Exp 09: Social Network Analysis (SNA)
 ├── 10.ipynb                       # Exp 10: Web Scraping & Topic Trends (WordCloud/TF-IDF)
 ├── 11.ipynb                       # Exp 11: Sentiment Analysis on Extracted Web Comments
+├── 12.ipynb                       # Exp 12: Web Hyperlink Structure Analysis (PageRank)
 ├── requirements.txt               # Project dependencies
 └── README.md                      # Project documentation
 ```
@@ -78,6 +81,7 @@ BIDA/
 - Sentiment Analysis (VADER, Naïve Bayes)
 - Topic Modeling (LDA, TF-IDF)
 - Social Network Analysis (Centrality Measures & Graph Theory)
+- Web Structure Mining & Link Analysis (PageRank)
 
 ---
 
@@ -92,6 +96,7 @@ BIDA/
 | **09** | **Social Network Analysis** | Construct a social network graph and identify influential nodes using **Degree, Closeness, and Betweenness Centrality** (`networkx`). | [`09.ipynb`](./09.ipynb) |
 | **10** | **Web Scraping & Topic Identification** | Extract text content, clean and preprocess data with NLTK, identify trending keywords using **TF-IDF & CountVectorizer**, and visualize topics via **WordCloud**. | [`10.ipynb`](./10.ipynb) |
 | **11** | **Sentiment Analysis on Web Data** | Extract user discussion comments, compute sentiment compound scores using NLTK's **VADER `SentimentIntensityAnalyzer`**, and visualize distribution via Pie & Bar charts. | [`11.ipynb`](./11.ipynb) |
+| **12** | **Web Hyperlink Analysis & PageRank** | Model a website's internal and external link architecture as a directed graph using `networkx`, evaluate key pages using the **PageRank Algorithm**, and visualize the hyperlink network. | [`12.ipynb`](./12.ipynb) |
 
 ---
 
