@@ -94,6 +94,9 @@ BIDA/
 | No. | Experiment Title | Description | Resource / Notebook |
 |:---:|:---|:---|:---:|
 | **01** | **Student Retention Analysis Dashboard** | Interactive business intelligence dashboard created in **Microsoft Excel** using **PivotTables**, **PivotCharts**, and connected **Slicers** to analyze student retention, dropout rates, academic performance, and demographic factors. | [`Program 1.xlsx`](./Program%201/Program%201.xlsx) <br> ([`Guide`](./Program%201/Program%201.pdf)) |
+| **02** | **Executive Dashboard Design** | Executive dashboard design for a given business analytics scenario using **Tableau Public**. | *Tableau Public* |
+| **03** | **Visual Analytics for Business Tasks** | Generate visual analytics for a given business tasks and data using **Tableau Public**. | *Tableau Public* |
+| **04** | **Customer Experience & Predictive Analytics** | Enhancing customer experience with predictive analytics and data mining by taking suitable business scenario (Use **Weka / RapidMiner / Spark / R / Microsoft Power BI**). | *Weka / RapidMiner / Spark / R / Power BI* |
 | **05** | **Customer Segmentation** | Segment customers based on annual income and spending score using **K-Means Clustering** and the Elbow Method. | [`05.ipynb`](./05.ipynb) |
 | **06** | **Association Rule Mining** | Identify frequent itemsets and generate association rules from transaction data using the **Apriori Algorithm** (`mlxtend`). | [`06.ipynb`](./06.ipynb) |
 | **07** | **Sentiment Classification** | Classify customer product reviews into positive, negative, or neutral sentiment using a **Multinomial Naïve Bayes** classifier. | [`07.ipynb`](./07.ipynb) |
@@ -107,11 +110,11 @@ BIDA/
 
 ## Technologies Used
 
-- **Spreadsheet & BI Tools:** `Microsoft Excel` (PivotTables, PivotCharts, Interactive Slicers, Data Tables)
-- **Language:** Python 3.12+
+- **Spreadsheet, BI & Visual Analytics:** `Microsoft Excel`, `Tableau Public`, `Microsoft Power BI`
+- **Data Mining & Machine Learning:** `scikit-learn`, `mlxtend`, `Weka`, `RapidMiner`, `R`, `Apache Spark`
+- **Programming & Scripting:** Python 3.12+, R
 - **Data Manipulation:** `pandas`, `numpy`, `openpyxl`
 - **Data Visualization:** `matplotlib`, `seaborn`, `wordcloud`
-- **Machine Learning & Mining:** `scikit-learn`, `mlxtend`
 - **NLP & Text Analytics:** `nltk` (VADER, Stopwords, Tokenization)
 - **Graph & Network Analysis:** `networkx`
 - **Interactive Development:** `jupyter`, `ipykernel`
