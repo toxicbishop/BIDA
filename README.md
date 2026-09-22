@@ -2,13 +2,14 @@
 
 A comprehensive collection of laboratory experiments, assignments, and practical implementations developed for the **Business Intelligence and Data Analytics (BCB701)** course.
 
-This repository demonstrates fundamental and advanced concepts in Business Intelligence, Data Analytics, Data Mining, Machine Learning, Data Visualization, Social Network Analysis, and Text / Sentiment Analytics using Python and Jupyter Notebooks.
+This repository demonstrates fundamental and advanced concepts in Business Intelligence, Data Analytics, Data Mining, Machine Learning, Data Visualization, Interactive Business Dashboards, Social Network Analysis, and Text / Sentiment Analytics using Python, Jupyter Notebooks, and Microsoft Excel.
 
 ---
 
 ## Course Overview
 
 Business Intelligence and Data Analytics focuses on extracting actionable insights from data to support decision-making processes. The course covers descriptive, predictive, and prescriptive analytics through practical implementations involving:
+- Interactive Business Reporting, Pivot Tables & Excel Dashboards
 - Data Preprocessing and Exploration
 - Cluster Analysis and Market Basket Mining
 - Supervised and Unsupervised Machine Learning
@@ -40,6 +41,9 @@ BIDA/
 │   └── program-12.png
 ├── output/                        # Generated output data files
 │   └── customer_reviews.xlsx      # Generated dataset for sentiment analysis
+├── Program 1/                     # Exp 01: Student Retention Excel Dashboard
+│   ├── Program 1.pdf              # Step-by-step process & documentation guide
+│   └── Program 1.xlsx             # Interactive Excel dashboard with PivotTables & Slicers
 ├── 05.ipynb                       # Exp 05: K-Means Customer Segmentation
 ├── 06.ipynb                       # Exp 06: Apriori Association Rule Mining
 ├── 07.ipynb                       # Exp 07: Sentiment Analysis with Naïve Bayes
@@ -68,8 +72,8 @@ BIDA/
 
 ### Module 3 – Business Intelligence & Data Warehousing
 - Data Warehousing Architecture & ETL Processes
-- Business Reporting & Interactive Dashboards
-- Data Visualization Tools (Tableau, Power BI)
+- Business Reporting & Interactive Dashboards (Excel PivotTables & Slicers)
+- Data Visualization Tools (Excel, Tableau, Power BI)
 
 ### Module 4 – Predictive Analytics
 - Data Mining & Supervised Classification
@@ -87,8 +91,9 @@ BIDA/
 
 ## Implemented Laboratory Experiments
 
-| No. | Experiment Title | Description | Notebook |
+| No. | Experiment Title | Description | Resource / Notebook |
 |:---:|:---|:---|:---:|
+| **01** | **Student Retention Analysis Dashboard** | Interactive business intelligence dashboard created in **Microsoft Excel** using **PivotTables**, **PivotCharts**, and connected **Slicers** to analyze student retention, dropout rates, academic performance, and demographic factors. | [`Program 1.xlsx`](./Program%201/Program%201.xlsx) <br> ([`Guide`](./Program%201/Program%201.pdf)) |
 | **05** | **Customer Segmentation** | Segment customers based on annual income and spending score using **K-Means Clustering** and the Elbow Method. | [`05.ipynb`](./05.ipynb) |
 | **06** | **Association Rule Mining** | Identify frequent itemsets and generate association rules from transaction data using the **Apriori Algorithm** (`mlxtend`). | [`06.ipynb`](./06.ipynb) |
 | **07** | **Sentiment Classification** | Classify customer product reviews into positive, negative, or neutral sentiment using a **Multinomial Naïve Bayes** classifier. | [`07.ipynb`](./07.ipynb) |
@@ -102,6 +107,7 @@ BIDA/
 
 ## Technologies Used
 
+- **Spreadsheet & BI Tools:** `Microsoft Excel` (PivotTables, PivotCharts, Interactive Slicers, Data Tables)
 - **Language:** Python 3.12+
 - **Data Manipulation:** `pandas`, `numpy`, `openpyxl`
 - **Data Visualization:** `matplotlib`, `seaborn`, `wordcloud`
@@ -147,8 +153,14 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Notebooks
+## Running the Experiments
 
+### 1. Interactive Excel Dashboard (Experiment 01)
+- Open [`Program 1/Program 1.xlsx`](./Program%201/Program%201.xlsx) in **Microsoft Excel** (or any compatible spreadsheet application).
+- Navigate to the `Dashboard` sheet to interact with dynamic visualizations and cross-filtering slicers (by Gender, Age, Support, etc.).
+- Refer to [`Program 1/Program 1.pdf`](./Program%201/Program%201.pdf) for the complete step-by-step methodology, PivotTable specifications, and chart configurations.
+
+### 2. Python & Jupyter Notebooks (Experiments 05 – 12)
 Launch Jupyter Notebook or JupyterLab in your active environment:
 
 ```bash
