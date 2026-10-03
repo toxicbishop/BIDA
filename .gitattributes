@@ -11,10 +11,15 @@
 *.pbix binary linguist-detectable=true
 *.pbit binary linguist-detectable=true
 *.pbip text linguist-detectable=true
+*.powerbi binary linguist-detectable=true
+*.tmdl text
+*.dax text
 
 # Tableau
-*.twb text linguist-detectable=true
+*.twb text linguist-language=XML linguist-detectable=true
 *.twbx binary linguist-detectable=true
+*.tds text linguist-language=XML linguist-detectable=true
+*.tdsx binary linguist-detectable=true
 *.tde binary linguist-detectable=true
 *.hyper binary linguist-detectable=true
 
