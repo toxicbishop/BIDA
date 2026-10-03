@@ -27,7 +27,8 @@ BIDA/
 │
 ├── .venv/                         # Python virtual environment (ignored)
 ├── Datasets/                      # Input datasets
-│   └── Mall_Customers.csv         # Customer dataset for clustering analysis
+│   ├── Mall_Customers.csv         # Customer dataset for clustering analysis
+│   └── Sample_Superstore.csv      # Superstore sales dataset for Tableau visual analytics & dashboards
 ├── Images/                        # Visualizations and output plots
 │   ├── program5-image1.png
 │   ├── program5-image2.png
@@ -44,6 +45,13 @@ BIDA/
 ├── Program 1/                     # Exp 01: Student Retention Excel Dashboard
 │   ├── Program 1.pdf              # Step-by-step process & documentation guide
 │   └── Program 1.xlsx             # Interactive Excel dashboard with PivotTables & Slicers
+├── Program 2/                     # Exp 02: Executive Dashboard Design (Tableau)
+│   ├── Program 2.pdf              # Step-by-step process & documentation guide
+│   └── Program 2.twb              # Tableau workbook file
+├── Program 3/                     # Exp 03: Visual Analytics for Business Tasks (Tableau)
+│   └── Program 3.pdf              # Step-by-step process & documentation guide
+├── Program 4/                     # Exp 04: Customer Experience & Predictive Analytics (Power BI)
+│   └── Program 4.pdf              # Step-by-step process & documentation guide
 ├── 05.ipynb                       # Exp 05: K-Means Customer Segmentation
 ├── 06.ipynb                       # Exp 06: Apriori Association Rule Mining
 ├── 07.ipynb                       # Exp 07: Sentiment Analysis with Naïve Bayes
@@ -94,9 +102,9 @@ BIDA/
 | No. | Experiment Title | Description | Resource / Notebook |
 |:---:|:---|:---|:---:|
 | **01** | **Student Retention Analysis Dashboard** | Interactive business intelligence dashboard created in **Microsoft Excel** using **PivotTables**, **PivotCharts**, and connected **Slicers** to analyze student retention, dropout rates, academic performance, and demographic factors. | [`Program 1.xlsx`](./Program%201/Program%201.xlsx) <br> ([`Guide`](./Program%201/Program%201.pdf)) |
-| **02** | **Executive Dashboard Design** | Executive dashboard design for a given business analytics scenario using **Tableau Public**. | *Tableau Public* |
-| **03** | **Visual Analytics for Business Tasks** | Generate visual analytics for a given business tasks and data using **Tableau Public**. | *Tableau Public* |
-| **04** | **Customer Experience & Predictive Analytics** | Enhancing customer experience with predictive analytics and data mining by taking suitable business scenario (Use **Weka / RapidMiner / Spark / R / Microsoft Power BI**). | *Weka / RapidMiner / Spark / R / Power BI* |
+| **02** | **Executive Dashboard Design** | Executive dashboard design for a given business analytics scenario using **Tableau Public** (KPIs, visual charts, and interactive dashboard). | [`Program 2.twb`](./Program%202/Program%202.twb) <br> ([`Guide`](./Program%202/Program%202.pdf)) |
+| **03** | **Visual Analytics for Business Tasks** | Generate visual analytics for business tasks (regional sales, monthly trends, category shares, top customers) using **Tableau Public** and the Superstore dataset. | [`Guide`](./Program%203/Program%203.pdf) |
+| **04** | **Customer Experience & Predictive Analytics** | Enhancing customer experience with data modeling, ETL, and predictive analytics in **Microsoft Power BI**. | [`Guide`](./Program%204/Program%204.pdf) |
 | **05** | **Customer Segmentation** | Segment customers based on annual income and spending score using **K-Means Clustering** and the Elbow Method. | [`05.ipynb`](./05.ipynb) |
 | **06** | **Association Rule Mining** | Identify frequent itemsets and generate association rules from transaction data using the **Apriori Algorithm** (`mlxtend`). | [`06.ipynb`](./06.ipynb) |
 | **07** | **Sentiment Classification** | Classify customer product reviews into positive, negative, or neutral sentiment using a **Multinomial Naïve Bayes** classifier. | [`07.ipynb`](./07.ipynb) |
@@ -163,7 +171,15 @@ pip install -r requirements.txt
 - Navigate to the `Dashboard` sheet to interact with dynamic visualizations and cross-filtering slicers (by Gender, Age, Support, etc.).
 - Refer to [`Program 1/Program 1.pdf`](./Program%201/Program%201.pdf) for the complete step-by-step methodology, PivotTable specifications, and chart configurations.
 
-### 2. Python & Jupyter Notebooks (Experiments 05 – 12)
+### 2. Tableau Dashboards & Visual Analytics (Experiments 02 & 03)
+- **Experiment 02:** Open [`Program 2/Program 2.twb`](./Program%202/Program%202.twb) in **Tableau Public** or **Tableau Desktop** to explore the Executive Dashboard. Refer to [`Program 2/Program 2.pdf`](./Program%202/Program%202.pdf) for the step-by-step design process, KPI creation, and visual combinations.
+- **Experiment 03:** Open [`Datasets/Sample_Superstore.csv`](./Datasets/Sample_Superstore.csv) in **Tableau Public** and follow [`Program 3/Program 3.pdf`](./Program%203/Program%203.pdf) to generate visual analytics answering key business tasks (regional sales, monthly trends, category shares, and top customer segments).
+
+### 3. Microsoft Power BI Workflow (Experiment 04)
+- Open **Microsoft Power BI Desktop**.
+- Follow the walkthrough in [`Program 4/Program 4.pdf`](./Program%204/Program%204.pdf) to execute data ingestion, cleaning, schema relationship modeling, and predictive analytics reporting for customer experience.
+
+### 4. Python & Jupyter Notebooks (Experiments 05 – 12)
 Launch Jupyter Notebook or JupyterLab in your active environment:
 
 ```bash
