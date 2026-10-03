@@ -27,6 +27,14 @@ BIDA/
 │
 ├── .venv/                         # Python virtual environment (ignored)
 ├── Datasets/                      # Input datasets
+│   ├── Program-4-Datasets/        # Relational dataset for Power BI (7 CSV files)
+│   │   ├── categories.csv
+│   │   ├── cities.csv
+│   │   ├── countries.csv
+│   │   ├── customers.csv
+│   │   ├── employees.csv
+│   │   ├── products.csv
+│   │   └── sales.csv              # Tracked via Git LFS
 │   ├── Mall_Customers.csv         # Customer dataset for clustering analysis
 │   └── Sample_Superstore.csv      # Superstore sales dataset for Tableau visual analytics & dashboards
 ├── Images/                        # Visualizations and output plots
@@ -49,9 +57,11 @@ BIDA/
 │   ├── Program 2.pdf              # Step-by-step process & documentation guide
 │   └── Program 2.twb              # Tableau workbook file
 ├── Program 3/                     # Exp 03: Visual Analytics for Business Tasks (Tableau)
-│   └── Program 3.pdf              # Step-by-step process & documentation guide
+│   ├── Program 3.pdf              # Step-by-step process & documentation guide
+│   └── Program 3.twb              # Tableau workbook file
 ├── Program 4/                     # Exp 04: Customer Experience & Predictive Analytics (Power BI)
-│   └── Program 4.pdf              # Step-by-step process & documentation guide
+│   ├── Program 4.pdf              # Step-by-step process & documentation guide
+│   └── program-4.pbix             # Microsoft Power BI report file (Tracked via Git LFS)
 ├── 05.ipynb                       # Exp 05: K-Means Customer Segmentation
 ├── 06.ipynb                       # Exp 06: Apriori Association Rule Mining
 ├── 07.ipynb                       # Exp 07: Sentiment Analysis with Naïve Bayes
@@ -103,8 +113,8 @@ BIDA/
 |:---:|:---|:---|:---:|
 | **01** | **Student Retention Analysis Dashboard** | Interactive business intelligence dashboard created in **Microsoft Excel** using **PivotTables**, **PivotCharts**, and connected **Slicers** to analyze student retention, dropout rates, academic performance, and demographic factors. | [`Program 1.xlsx`](./Program%201/Program%201.xlsx) <br> ([`Guide`](./Program%201/Program%201.pdf)) |
 | **02** | **Executive Dashboard Design** | Executive dashboard design for a given business analytics scenario using **Tableau Public** (KPIs, visual charts, and interactive dashboard). | [`Program 2.twb`](./Program%202/Program%202.twb) <br> ([`Guide`](./Program%202/Program%202.pdf)) |
-| **03** | **Visual Analytics for Business Tasks** | Generate visual analytics for business tasks (regional sales, monthly trends, category shares, top customers) using **Tableau Public** and the Superstore dataset. | [`Guide`](./Program%203/Program%203.pdf) |
-| **04** | **Customer Experience & Predictive Analytics** | Enhancing customer experience with data modeling, ETL, and predictive analytics in **Microsoft Power BI**. | [`Guide`](./Program%204/Program%204.pdf) |
+| **03** | **Visual Analytics for Business Tasks** | Generate visual analytics for business tasks (regional sales, monthly trends, category shares, top customers) using **Tableau Public** and the Superstore dataset. | [`Program 3.twb`](./Program%203/Program%203.twb) <br> ([`Guide`](./Program%203/Program%203.pdf)) |
+| **04** | **Customer Experience & Predictive Analytics** | Enhancing customer experience with data modeling, ETL, and predictive analytics in **Microsoft Power BI**. | [`program-4.pbix`](./Program%204/program-4.pbix) <br> ([`Guide`](./Program%204/Program%204.pdf)) |
 | **05** | **Customer Segmentation** | Segment customers based on annual income and spending score using **K-Means Clustering** and the Elbow Method. | [`05.ipynb`](./05.ipynb) |
 | **06** | **Association Rule Mining** | Identify frequent itemsets and generate association rules from transaction data using the **Apriori Algorithm** (`mlxtend`). | [`06.ipynb`](./06.ipynb) |
 | **07** | **Sentiment Classification** | Classify customer product reviews into positive, negative, or neutral sentiment using a **Multinomial Naïve Bayes** classifier. | [`07.ipynb`](./07.ipynb) |
@@ -133,8 +143,11 @@ BIDA/
 
 ### 1. Clone the Repository
 ```bash
+# Ensure Git LFS is installed for large model & dataset files
+git lfs install
 git clone https://github.com/toxicbishop/BIDA.git
 cd BIDA
+git lfs pull
 ```
 
 ### 2. Set Up Virtual Environment
@@ -173,11 +186,12 @@ pip install -r requirements.txt
 
 ### 2. Tableau Dashboards & Visual Analytics (Experiments 02 & 03)
 - **Experiment 02:** Open [`Program 2/Program 2.twb`](./Program%202/Program%202.twb) in **Tableau Public** or **Tableau Desktop** to explore the Executive Dashboard. Refer to [`Program 2/Program 2.pdf`](./Program%202/Program%202.pdf) for the step-by-step design process, KPI creation, and visual combinations.
-- **Experiment 03:** Open [`Datasets/Sample_Superstore.csv`](./Datasets/Sample_Superstore.csv) in **Tableau Public** and follow [`Program 3/Program 3.pdf`](./Program%203/Program%203.pdf) to generate visual analytics answering key business tasks (regional sales, monthly trends, category shares, and top customer segments).
+- **Experiment 03:** Open [`Program 3/Program 3.twb`](./Program%203/Program%203.twb) in **Tableau Public** or connect [`Datasets/Sample_Superstore.csv`](./Datasets/Sample_Superstore.csv), following [`Program 3/Program 3.pdf`](./Program%203/Program%203.pdf) to generate visual analytics answering key business tasks (regional sales, monthly trends, category shares, and top customer segments).
 
 ### 3. Microsoft Power BI Workflow (Experiment 04)
-- Open **Microsoft Power BI Desktop**.
-- Follow the walkthrough in [`Program 4/Program 4.pdf`](./Program%204/Program%204.pdf) to execute data ingestion, cleaning, schema relationship modeling, and predictive analytics reporting for customer experience.
+- Open [`Program 4/program-4.pbix`](./Program%204/program-4.pbix) directly in **Microsoft Power BI Desktop** to view the completed multi-page interactive dashboards (`customer analysis`, `product Insights`, `Employee Performance`, and `Time Series Sales Trend`).
+- The 7 relational CSV datasets are located in [`Datasets/Program-4-Datasets/`](./Datasets/Program-4-Datasets/) (`sales.csv`, `products.csv`, `customers.csv`, `categories.csv`, `employees.csv`, `cities.csv`, `countries.csv`).
+- Refer to [`Program 4/Program 4.pdf`](./Program%204/Program%204.pdf) for the complete lab specifications, Power Query transformations, data modeling relationships, DAX measures, and forecasting settings.
 
 ### 4. Python & Jupyter Notebooks (Experiments 05 – 12)
 Launch Jupyter Notebook or JupyterLab in your active environment:

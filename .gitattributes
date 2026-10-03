@@ -1,20 +1,17 @@
 # Auto-detect text files and perform LF normalization
 * text=auto
-
 # Microsoft Excel
 *.xlsx binary linguist-detectable=true
 *.xls binary linguist-detectable=true
 *.xlsm binary linguist-detectable=true
 *.csv text linguist-detectable=true
-
 # Microsoft Power BI
-*.pbix binary linguist-detectable=true
+*.pbix filter=lfs diff=lfs merge=lfs -text
 *.pbit binary linguist-detectable=true
 *.pbip text linguist-detectable=true
 *.powerbi binary linguist-detectable=true
 *.tmdl text
 *.dax text
-
 # Tableau
 *.twb text linguist-language=XML linguist-detectable=true
 *.twbx binary linguist-detectable=true
@@ -22,7 +19,7 @@
 *.tdsx binary linguist-detectable=true
 *.tde binary linguist-detectable=true
 *.hyper binary linguist-detectable=true
-
 # Jupyter Notebooks & Python
 *.ipynb text
 *.py text
+Datasets/Program-4-Datasets/sales.csv filter=lfs diff=lfs merge=lfs -text
