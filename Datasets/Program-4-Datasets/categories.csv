@@ -1,12 +1,13 @@
-CategoryID,CategoryName
-1,Confections
-2,Shell fish
-3,Cereals
-4,Dairy
-5,Beverages
-6,Seafood
-7,Meat
-8,Grain
-9,Poultry
-10,Snails
-11,Produce
+category_id,category_name
+1,Baby Food
+2,Beverages
+3,Cereal
+4,Clothes
+5,Cosmetics
+6,Fruits
+7,Household
+8,Meat
+9,Office Supplies
+10,Personal Care
+11,Snacks
+12,Vegetables
